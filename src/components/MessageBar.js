@@ -19,7 +19,6 @@ export const MessageBar = (props) => {
     const textFieldRef = useRef(null);
 
     const dispatch = useDispatch();
-    // let { dispatch } = props;
 
     const handleClick = event => {
         anchorEl === null ? setAnchorEl(event.currentTarget) : setAnchorEl(null);
@@ -82,7 +81,6 @@ export const MessageBar = (props) => {
                 maxRows='2'
                 multiline
                 inputRef={textFieldRef}
-                // margin='normal'
                 InputProps={{
                     endAdornment: (
                         <InputAdornment position="end">
@@ -96,24 +94,11 @@ export const MessageBar = (props) => {
                 }}
                 value={text}
                 onChange={event => setText(event.target.value)}
-                // sx={{
-                //     mx: 1.5,
-                //     my: 0.5,
-                //     borderRadius: '5px',
-                //     width: '650px'
-                // }}
                 style={{
-                    // mx: 1.5,
-                    // my: 0.5,
                     borderRadius: '5px',
                     width: '660px'
-                    // width: 'auto'
                 }}
             />
-            {/* <TextareaAutosize 
-                aria-label='Message Text Area'
-                placeholder='Type a message'
-            /> */}
             <Button 
                 variant='contained' 
                 color='primary' 
@@ -123,7 +108,6 @@ export const MessageBar = (props) => {
                     borderRadius: '5px',
                     fontSize: '14px',
                     ml: 1,
-                    // justifySelf: 'flex-end'
                 }}
                 onClick={(event) => { 
                     console.log(event);
