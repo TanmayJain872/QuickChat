@@ -7,35 +7,8 @@ import PeopleOutlineIcon from '@mui/icons-material/PeopleOutline';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
 import CancelPresentationIcon from '@mui/icons-material/CancelPresentation';
 import PriorityHighRoundedIcon from '@mui/icons-material/PriorityHighRounded';
-// import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { theme, ThemeProvider } from './QuickChatTheme';
 
-// const gridItemsTheme = createTheme({
-//     palette: {
-//         primary: {
-//             // main: '#000000',
-//             // light: '#222222'
-//             main: '#3d5afe',
-//             light: '#cbdfff'
-//         },
-//         secondary: {
-//             main: '#7e57c2',
-//             light: '#efe7f6',
-//             contrastText: '#000000'
-//         },
-//         warning: {
-//             main: '#ff5722',
-//             light: '#fff3e0'
-//         },
-//         success: {
-//             main: '#1dc9b6',
-//             light: '#dfffff'
-//         },
-//         // secondary: {
-//         //     main: ''
-//         // }
-//     }
-// });
 
 export const MeetingsDetails = () => {
     return (
@@ -56,7 +29,6 @@ export const MeetingsDetails = () => {
             p: 2
         }}>
         <ThemeProvider theme={theme}>
-        {/* <ThemeProvider theme={gridItemsTheme}> */}
         <Grid 
             container 
             spacing={0.5} 
@@ -64,7 +36,6 @@ export const MeetingsDetails = () => {
                 height: '10px'
             }}
         >
-
             <Grid item xs={6} >
                 <Box 
                     alignItems='center' 
@@ -92,7 +63,6 @@ export const MeetingsDetails = () => {
             <Grid item xs={6} >
                 <Box 
                     alignItems='center' 
-                    // justifyContent='center' 
                     sx={{ 
                         display: 'flex', 
                         bgcolor: 'success.light', 
@@ -132,7 +102,6 @@ export const MeetingsDetails = () => {
                         fontSize='small' 
                         sx={{ bgcolor: '#d1c4e9', borderRadius: '15px', '&.MuiSvgIcon-root': { p: 0.5 } }}
                     />
-                    {/* bgcolor: '#bac7ff' */}
                     <Stack spacing={-0.5} sx={{ ml: 0.5 }} >
                         <Typography sx={{ fontWeight: 'bold', fontSize: '14px' }} >119</Typography>
                         <Typography sx={{ fontSize: '8px', color: '#666666' }} >Meetings</Typography>
@@ -143,7 +112,6 @@ export const MeetingsDetails = () => {
             <Grid item minHeight='300vh' xs={6} sx={{ mt: 0 }} >
                 <Box 
                     alignItems='center' 
-                    // justifyContent='center'
                     sx={{ 
                         display: 'flex', 
                         bgcolor: 'warning.light', 
@@ -171,16 +139,6 @@ export const MeetingsDetails = () => {
                 <Typography sx={{ fontWeight: 'bold', fontSize: '12.5px', color: '#000000' }} >Current Week</Typography>
                 <Typography sx={{ fontSize: '8.5px', color: '#666666' }} >Activity</Typography>
             </Stack>
-            
-            {/* <Stack direction='row' justifyContent='flex-start' alignItems='flex-start' alignSelf='flex-start' spacing={-0.5} sx={{ mb: 1, position: 'absolute' }}>
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-                <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
-            </Stack> */}
         </Box>
         </ThemeProvider>
 
