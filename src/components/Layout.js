@@ -31,13 +31,6 @@ export const Layout = () => {
                 color: 'black',
                 height: '670px',
                 width: '1350px',
-                // width: {
-                //     xs: 350,
-                //     sm: 550,
-                //     md: 700,
-                //     lg: 1000,
-                //     xl: 1350
-                // },
                 paddingTop: '20px',
                 px: '20px'
             }}
@@ -60,7 +53,6 @@ export const Layout = () => {
                 <ConversationsList 
                     status='Archived'
                     open={false}
-                    // justifySelf='flex-end'
                 />
             </Box>
             {/* COLUMN 1 ENDS */}
