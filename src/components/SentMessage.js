@@ -3,8 +3,6 @@
 import React from 'react';
 import { Avatar, Badge, Box, FormControl, FormHelperText, Typography } from '@mui/material';
 
-// style={{ display: 'flex' }}
-
 const SentMessage = props => {
     return (
         <Box component='div' sx={{ alignSelf: 'flex-end' }}>
@@ -26,14 +24,6 @@ const SentMessage = props => {
                 >
                     <Typography sx={{ color: '#f1f1f1', fontSize: '0.8rem', textAlign: 'left' }} >
                         {props.messageToBeDisplayed}
-                        {/* Hi Henry !!
-                        How are you doing this fine evening ?! */}
-                        {/* Hi Henry !!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?! */}
                     </Typography>
                 </Box>
                 <FormHelperText 
@@ -65,5 +55,3 @@ const SentMessage = props => {
 }
 
 export default SentMessage;
-
-
