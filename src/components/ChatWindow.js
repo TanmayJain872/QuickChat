@@ -23,13 +23,14 @@ export const ChatWindow = () => {
     const scrollRef = useRef(null);
 
     useEffect(() => {
-        // scrollRef.current?.scrollIntoView({ behaviour: "smooth" }); // Optional Chaining only available in ES11
         console.log(scrollRef.current);
         if (scrollRef.current.id === "scrollingDestination") scrollRef.current.scrollIntoView({ behaviour: "smooth" });
     }, [listOfMessages]);
 
     return (
-        <Box component='div' sx={{ 
+        <Box 
+            component='div' 
+            sx={{ 
                 display: 'flex',
                 flexDirection: 'column',
                 height: '620px',
@@ -38,7 +39,7 @@ export const ChatWindow = () => {
                 border: 1,
                 borderRadius: '16px',
                 borderColor: 'grey.300',
-                p: 2, // 16px
+                p: 2,
             }}
         >
             <Box 
@@ -46,7 +47,6 @@ export const ChatWindow = () => {
                 sx={{
                     display: 'flex',
                     flexDirection: 'column',
-                    // backgroundColor: 'grey.50',
                     color: 'white',
                     height: '552px',
                     width: '844px',
