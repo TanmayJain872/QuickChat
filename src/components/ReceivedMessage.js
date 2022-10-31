@@ -1,11 +1,11 @@
-/* jshint esversion: 9 */
+/* jshint esversion: 11 */
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Avatar, Badge, Box, FormControl, FormHelperText, Typography } from '@mui/material';
 
-const ReceivedMessage = () => {
+const ReceivedMessage = props => {
     return (
-        <div>
+        <div style={{ alignSelf: 'flex-start' }}>
             <Badge
                 overlap='circular' 
                 anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }} 
@@ -27,29 +27,29 @@ const ReceivedMessage = () => {
                         fontSize: '0.8rem',
                         display: 'inline-flex',
                         flexWrap: 'wrap',
+                        flexShrink: 1,
                         justifyContent: 'flex-start',
                         alignItems: 'flex-start',
                         alignContent: 'flex-start',
                         bgcolor: '#ffffff',
                         borderRadius: '10px',
-                        position: 'relative',
                         boxShadow: 1,
                         maxWidth: '400px',
+                        width: 'auto',
                         ml: 1,
                         p: 2
                     }}
                 >
-                    {/* Hi Henry !!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?! */}
-                    
                     <Typography sx={{ color: '#282A35', fontSize: '0.8rem' }} >
-                        {/* {props.message} */}
-                        Hi Dwayne !!
+                        {props.messageToBeDisplayed}
+                        {/* Hi Dwayne !!
+                        How are you doing this fine evening ?! */}
+                        {/* Hi Dwayne !!
                         How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?! */}
                     </Typography>
                 </Box>
                 <FormHelperText sx={{ 
@@ -64,5 +64,5 @@ const ReceivedMessage = () => {
     )
 }
 
-export default ReceivedMessage
+export default ReceivedMessage;
 

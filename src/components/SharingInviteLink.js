@@ -8,11 +8,15 @@ const SharingInviteLink = () => {
     return (
         <Box 
             sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                flexDirection: 'column',
+                flexShrink: 1,
+                alignItems: 'center',
                 backgroundColor: 'grey.50',
                 border: 1,
                 borderRadius: '16px',
                 borderColor: 'grey.300',
-                color: 'white',
                 height: '127px',
                 width: '175px',
                 px: '16px',

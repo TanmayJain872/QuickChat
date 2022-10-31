@@ -43,6 +43,7 @@ export const MeetingsDetails = () => {
             sx={{
             display: 'flex',
             flexWrap: 'wrap',
+            flexShrink: 1,
             // flexDirection: 'column',
             backgroundColor: 'grey.50',
             border: 1,
@@ -51,7 +52,8 @@ export const MeetingsDetails = () => {
             color: 'white',
             height: '249px',
             width: '175px',
-            padding: '16px'
+            overflowY: 'hidden',
+            p: 2
         }}>
         <ThemeProvider theme={theme}>
         {/* <ThemeProvider theme={gridItemsTheme}> */}
@@ -180,8 +182,8 @@ export const MeetingsDetails = () => {
                 <PriorityHighRoundedIcon sx={{ color: 'primary.light', bgcolor: 'white', fontSize: '30px' }} />
             </Stack> */}
         </Box>
-
         </ThemeProvider>
+
         </Box>
     )
 };

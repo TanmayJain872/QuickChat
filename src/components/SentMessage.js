@@ -1,13 +1,13 @@
-/* jshint esversion: 9 */
+/* jshint esversion: 11 */
 
 import React from 'react';
 import { Avatar, Badge, Box, FormControl, FormHelperText, Typography } from '@mui/material';
 
 // style={{ display: 'flex' }}
 
-const SentMessage = (props) => {
+const SentMessage = props => {
     return (
-        <Box component='div' sx={{ justifyContent: 'flex-end' }}>
+        <Box component='div' sx={{ alignSelf: 'flex-end' }}>
             <FormControl>
                 <Box
                     sx={{
@@ -15,35 +15,34 @@ const SentMessage = (props) => {
                         fontSize: '0.8rem',
                         display: 'inline-flex',
                         flexWrap: 'wrap',
-                        justifyContent: 'flex-start',
-                        alignItems: 'flex-start',
-                        alignContent: 'flex-start',
+                        flexShrink: 1,
                         bgcolor: '#282A35',
                         borderRadius: '10px',
-                        position: 'relative',
                         maxWidth: '400px',
+                        width: 'auto',
                         mr: 1,
                         p: 2
                     }}
                 >
-                    {/* Hi Henry !!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?!
-                    How are you doing this fine evening ?! */}
-                    
-                    <Typography sx={{ color: '#f1f1f1', fontSize: '0.8rem' }} >
-                        {/* {props.message} */}
-                        Hi Henry !!
+                    <Typography sx={{ color: '#f1f1f1', fontSize: '0.8rem', textAlign: 'left' }} >
+                        {props.messageToBeDisplayed}
+                        {/* Hi Henry !!
+                        How are you doing this fine evening ?! */}
+                        {/* Hi Henry !!
                         How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?!
+                        How are you doing this fine evening ?! */}
                     </Typography>
                 </Box>
-                <FormHelperText sx={{ 
-                    color: 'grey.500',
-                    fontSize: '10px',
-                    textAlign: 'right'
-                }}>
+                <FormHelperText 
+                    sx={{ 
+                        color: 'grey.500',
+                        fontSize: '10px',
+                        textAlign: 'right'
+                    }}
+                >
                     9h ago
                 </FormHelperText>
             </FormControl>
@@ -65,6 +64,6 @@ const SentMessage = (props) => {
     )
 }
 
-export default SentMessage
+export default SentMessage;
 
 
