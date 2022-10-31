@@ -8,8 +8,6 @@ export const AppLogo = () => {
     return (
         <Stack direction='row' display='flex' alignItems='center' spacing={1}>
             <OfflineBoltSharpIcon 
-                // color='primary'
-                // aria-label='logo'
                 sx={{ 
                     fontSize: "50px", 
                     color: 'primary.light', 
