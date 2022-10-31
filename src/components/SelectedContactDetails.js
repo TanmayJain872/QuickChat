@@ -18,8 +18,6 @@ const getSelectedChat = (idOfRequiredChat, chats) => {
 
 const SelectedContactDetails = () => {
 
-    // const store = useStore();
-    // let chat = store.getState().contact.selectedContact;
     const chats = useSelector(state => state.contact.contacts);
     const selectedChatID = useSelector(state => state.contact.contactIDofSelectedContact);
     const chat = getSelectedChat(selectedChatID, chats);
