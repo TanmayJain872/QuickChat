@@ -42,14 +42,6 @@ const ReceivedMessage = props => {
                 >
                     <Typography sx={{ color: '#282A35', fontSize: '0.8rem' }} >
                         {props.messageToBeDisplayed}
-                        {/* Hi Dwayne !!
-                        How are you doing this fine evening ?! */}
-                        {/* Hi Dwayne !!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?!
-                        How are you doing this fine evening ?! */}
                     </Typography>
                 </Box>
                 <FormHelperText sx={{ 
